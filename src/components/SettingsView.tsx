@@ -38,6 +38,7 @@ import {
 } from "../utils/googleDriveBackup";
 import { onAuthStateChanged } from "firebase/auth";
 import { isSupabaseConfigured, syncDataToSupabase } from "../supabase";
+import SupabaseTestConnection from "./SupabaseTestConnection";
 
 export default function SettingsView() {
   const { rooms, bookings, restoreData } = useStore();
@@ -619,6 +620,9 @@ export default function SettingsView() {
                 <Database className="w-4 h-4" />
                 {isSyncingToSupabase ? "Đang đồng bộ..." : "Đồng bộ dữ liệu sang Supabase"}
               </button>
+
+              {/* Test Connection Component */}
+              <SupabaseTestConnection />
 
               {/* View/Download SQL Schema section */}
               <div className="pt-2 border-t border-slate-100 dark:border-slate-800">
