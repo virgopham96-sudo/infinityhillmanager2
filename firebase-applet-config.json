@@ -1,0 +1,10 @@
+{
+  "projectId": "infinityhillmanager",
+  "appId": "1:399263479440:web:39e31e50b8e5f0f4580a15",
+  "apiKey": "AIzaSyDjymjIMx4pQm1rzoiHSJxI83NLhKDUJqY",
+  "authDomain": "infinityhillmanager.firebaseapp.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "infinityhillmanager.firebasestorage.app",
+  "messagingSenderId": "399263479440",
+  "measurementId": "G-3PKE5VP3RB"
+}
