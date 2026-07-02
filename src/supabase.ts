@@ -2,7 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import { Room, BookingRecord } from "./types";
 
 const supabaseUrl = (((import.meta as any).env.VITE_SUPABASE_URL || (import.meta as any).env.NEXT_PUBLIC_SUPABASE_URL || "").trim());
-const supabaseAnonKey = (((import.meta as any).env.VITE_SUPABASE_ANON_KEY || (import.meta as any).env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "").trim());
+const supabaseAnonKey = (((import.meta as any).env.VITE_SUPABASE_ANON_KEY || (import.meta as any).env.NEXT_PUBLIC_SUPABASE_ANON_KEY || (import.meta as any).env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "").trim());
 
 // Lazy initialize so the app doesn't crash on start if envs are missing
 export const supabase = supabaseUrl && supabaseAnonKey 
